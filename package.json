@@ -5,8 +5,8 @@
   "version": "1.0.0",
   "description": "React 매뉴얼 툴체인 구성",
   "scripts": {
-    "bundle": "webpack bundle --target=browserslist --entry=./src/main.js --output-path=public --mode=development",
-    "build": "webpack bundle --target=browserslist --entry=./src/main.js --output-path=./build --mode=production"
+    "bundle": "webpack bundle -c webpack/dev.js",
+    "build": "webpack bundle --progress -c webpack/prod.js"
   },
   "keywords": [
     "react",
