@@ -5,11 +5,8 @@
   "version": "1.0.0",
   "description": "React 매뉴얼 툴체인 구성",
   "scripts": {
-    // webpack 번들링을 수행하는 bundle 명령을 등록
-    "webpack:config": "webpack --target=browserslist --entry=./src/main.js --output-path=public",
-    "webpack:dev": "npm run webpack:config -- --mode=development",
-    // 번들링 파일 최적화
-    "webpack:prod": "npm run webpack -- --mode=production"
+    "bundle": "webpack bundle --target=browserslist --entry=./src/main.js --output-path=public --mode=development",
+    "build": "webpack bundle --target=browserslist --entry=./src/main.js --output-path=./build --mode=production"
   },
   "keywords": [
     "react",
