@@ -5,7 +5,11 @@
   "version": "1.0.0",
   "description": "React 매뉴얼 툴체인 구성",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    // webpack 번들링을 수행하는 bundle 명령을 등록
+    "webpack:config": "webpack --target=browserslist --entry=./src/main.js --output-path=public",
+    "webpack:dev": "npm run webpack:config -- --mode=development",
+    // 번들링 파일 최적화
+    "webpack:prod": "npm run webpack -- --mode=production"
   },
   "keywords": [
     "react",
@@ -24,5 +28,9 @@
     "name": "chjy0202",
     "email": "chjy0202@hanyang.ac.kr"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
 }
