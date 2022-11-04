@@ -6,6 +6,7 @@ const prodConfig = merge(commonConfig, {
   devtool: false,
   output: {
     ...commonConfig.output,
+    // 최적화
     filename: '[name].min.js',
   },
 });

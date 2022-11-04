@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "description": "React 매뉴얼 툴체인 구성",
   "scripts": {
+    "dev": "webpack server -c webpack/dev.js",
     "bundle": "webpack bundle -c webpack/dev.js",
     "build": "webpack bundle --progress -c webpack/prod.js"
   },
@@ -28,6 +29,7 @@
   "license": "ISC",
   "devDependencies": {
     "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
   }
 }
