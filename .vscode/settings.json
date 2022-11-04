@@ -1,7 +1,7 @@
 {
   "files.associations": {
     "*.js": "javascriptreact",
-    "*rc": "json"
+    "*.json": "jsonc"
   },
   "files.exclude": {
     "**/.git": true,
