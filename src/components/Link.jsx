@@ -4,7 +4,7 @@ export function Link({ href, external = false, children }) {
   if (external) {
     externalProps = {
       target: '_blank',
-      rel="noopener noreferrer"
+      rel: 'noopener noreferrer',
     };
   }
 
