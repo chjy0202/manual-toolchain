@@ -115,7 +115,7 @@
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-  "typescript.format.enable": false,
+  "typescript.format.enable": true,
   "typescript.validate.enable": true,
 
   "path-intellisense.extensionOnImport": true,
