@@ -1,4 +1,5 @@
 import { resolve } from 'node:path';
+import { babelLoader } from './loaders/index.js';
 
 const commonConfig = {
   target: ['browserslist'],
@@ -13,6 +14,9 @@ const commonConfig = {
   output: {
     path: resolve('public'),
     filename: '[name].bundle.js',
+  },
+  module: {
+    rules: [babelLoader],
   },
 };
 
