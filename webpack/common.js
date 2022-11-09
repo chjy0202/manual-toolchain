@@ -1,11 +1,11 @@
 import { resolve } from 'node:path';
-import { babelLoader } from './loaders/index.js';
+import { babelLoader, typeScriptLoader } from './loaders/index.js';
 
 const commonConfig = {
   target: ['browserslist'],
-  // .jsx 확장자 없이도 불러올 수 있도록 수정
+  // 확장자 없이도 불러올 수 있도록 수정
   resolve: {
-    extensions: ['.js', '.jsx', '.json', '.wasm'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json', '.wasm'],
   },
   entry: {
     // 절대경로 처리 (join은 상대경로 처리)
@@ -16,7 +16,7 @@ const commonConfig = {
     filename: '[name].bundle.js',
   },
   module: {
-    rules: [babelLoader],
+    rules: [babelLoader, typeScriptLoader],
   },
 };
 
